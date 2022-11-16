@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .container h1 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #1C2433;
+        }
+
+        .connectForm {
+            margin-top: 8px;
+        }
+
+        .connectForm form label {
+            padding: 16px 0 8px;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1C2433;
+            font-weight: 400;
+        }
+
+        .connectForm input {
+            display: block;
+            padding: 13px 16px;
+            border: 1px solid #C3C5C9;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .connectForm input[type='submit'] {
+            padding: 12px 24px;
+            display: inline;
+            margin-top: 16px;
+            color: #fff;
+            background: #413BBC;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Connect</h1>
+        <div class="connectForm">
+            <form action="/action_page.php">
+                <label for="">Twitter Handle</label>
+                <input type="text" name="twiiterhandle" value="">
+                <label for="">Catalogue ID</label>
+                <input type="text" name="catalogueid" value="">
+                <input type="submit" value="Connect">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

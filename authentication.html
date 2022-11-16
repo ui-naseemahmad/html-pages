@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container h1 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #1C2433;
+        }
+
+        .credentialsForm  label {
+            padding: 16px 0 8px;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1C2433;
+            font-weight: 400;
+        }
+
+        .credentialsForm  input {
+            display: block;
+            padding: 13px 16px;
+            border: 1px solid #C3C5C9;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .credentialsForm  input[type='submit'] {
+            padding: 12px 24px;
+            display: inline;
+            margin-top: 16px;
+            color: #fff;
+            background: #413BBC;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            border-radius: 4px;
+        }
+
+        .authentication-section {
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+        }
+
+        .authentication-section h2 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+
+
+        .authorization h2 {
+            margin-top: 22px;
+        }
+
+        .authorizationSteps {
+            margin-top: 24px;
+            padding-left: 24px;
+        }
+
+        .authorizationSteps li {
+            color: #616771;
+            font-weight: 500;
+            padding-bottom: 4px;
+        }
+
+        .credentials {
+            box-shadow: 0px 8px 12px rgb(0 0 0 / 10%);
+            padding: 20px;
+            border-radius: 4px;
+        }
+        @media only screen and (max-width:767px){
+.authentication-section {
+    grid-template-columns: 100%;
+}
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cedcommerce Shopify Authentication</h1>
+        <div class="authentication-section">
+            <div class="authorization">
+                <h2>1. Authorization</h2>
+                <ul class="authorizationSteps">
+                    <li>Go to Shopify admin panel</li>
+                    <li>Create Private App with following scopes</li>
+                    <li>Install App</li>
+                    <li>Generate Access Token</li>
+                </ul>
+            </div>
+            <div class="credentials">
+                <h2>2. Copy Credentials and save</h2>
+                <div class="credentialsForm">
+                    <form action="/action_page.php">
+                        <label for="">Client Id</label><br>
+                        <input type="text" name="" value="">
+                        <label for="">Client Secret</label>
+                        <input type="text" name="" value="">
+                        <label for="">Shop Url</label>
+                        <input type="text" name="" value="">
+                        <label for="">Authorization Token</label>
+                        <input type="text" name="" value="">
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
